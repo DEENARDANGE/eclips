@@ -1,0 +1,126 @@
+package com.bridgelabz.inventory.data.impl;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import com.bridgelabz.inventory.data1.InventoryNameData;
+import com.bridgelabz.inventory.model.Inventory;
+import com.bridgelabz.util.AlgorithmLogic;
+import com.google.gson.Gson;
+
+public class InventoryImpl implements InventoryNameData {
+
+	List<Inventory> listinv1 = new ArrayList<>();
+//	List<Inventory> listinv = new ArrayList<>();
+
+	// JSON parser object to parse read file
+	static JSONParser jsonParser = new JSONParser();
+
+	public void fileRead() {
+		JSONParser parser = new JSONParser();
+
+		try {	
+			JSONArray array = (JSONArray) parser.parse(new FileReader("C:\\\\Users\\\\lenovo\\\\eclipse-workspace\\\\FuctionalPgm\\\\src\\\\com\\\\bridgelabz\\\\oops\\\\invetaryjson\\\\Inventory.json"));
+
+			for (Object obj : array)
+			{
+				JSONObject invlist = (JSONObject) obj;
+
+				String name = (String) invlist.get("name");
+				System.out.println(name);
+
+				double weight =  (Double) invlist.get("weight");
+				System.out.println(weight);
+
+				double price = (Double) invlist.get("price");
+				System.out.println(price);
+
+				JSONArray invArray = (JSONArray) invlist.get("invlist");
+
+				for (Object inv : array)
+				{
+					System.out.println(inv+"");
+				}
+				Inventory inventory = new Inventory(name,weight,price);
+				listinv1.add(inventory);
+			}
+
+			listinv1.addAll(array);
+			System.out.println(listinv1);
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+	}
+
+	//	List<Inventory> listinv = new ArrayList<>();
+	public void writefile() {
+		Gson gson = new Gson();
+		String json = gson.toJson(listinv1);
+		try (FileWriter file = new FileWriter(
+				"C:\\\\Users\\\\lenovo\\\\eclipse-workspace\\\\FuctionalPgm\\\\src\\\\com\\\\bridgelabz\\\\oops\\\\invetaryjson\\\\Inventory.json")) {
+			file.write(json);
+			file.flush();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	@SuppressWarnings("unused")
+	@Override
+	public void add(String name, double price, double weight) {
+		JSONObject obj = new JSONObject();
+		// fileRead fr=new fileRead();
+		Inventory addinv = new Inventory();
+		System.out.println("enter the name :");
+		String addName = AlgorithmLogic.readString();
+		addinv.setName(addName);
+		System.out.println("Enter the price:");
+		double addPrice = AlgorithmLogic.getDouble();
+		addinv.setPrice(addPrice);
+		System.out.println("Enter the weight ");
+		double addWeight = AlgorithmLogic.getDouble();
+		addinv.setWeight(addWeight);
+		listinv1.add(addinv);
+
+//		listinv1.forEach(inventory1 -> System.out.println(inventory1.toString()));
+//		listinv1.addAll(listinv);
+
+		writefile();
+	}
+
+	public void remove() {
+		fileRead();
+		//Inventory removinv = new Inventory();
+		System.out.println("enter the name to be removed :");
+		String removename = AlgorithmLogic.readString();
+		//		listinv1.removeIf(inventory->inventory.getName().equals(removename));
+		listinv1.removeIf((Inventory s)->s.getName()!= null && s.equals(removename));
+		//listinv1.removeIf(inventory->inventory.getName()!=null&&inventory.getName().equals(removename));
+		writefile();
+	}
+
+	@Override
+	public void calculate(String name, double price, double weight) {
+		listinv1.forEach(inventory1 -> System.out.println(inventory1.toString()));
+		listinv1.forEach(inventory -> {
+			System.out.println(
+					"Total price of " + inventory.getName() + " is " + (inventory.getPrice() * inventory.getWeight()));
+		});
+	}
+}
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Demo2.java&apos; to &apos;WebProjects/src/com.bridgelabz.webprojects&apos;&#x0D;&#x0A;- Original project: &apos;WebProjectDemo1&apos;&#x0D;&#x0A;- Destination element: &apos;WebProjects/src/com.bridgelabz.webprojects&apos;&#x0D;&#x0A;- Original element: &apos;com.bridgelabz.webdemo.Demo2.java&apos;" description="Copy compilation unit" destination="=WebProjects/src&lt;com.bridgelabz.webprojects" element1="/src&lt;com.bridgelabz.webdemo{Demo2.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1556183669840" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,25 @@
+1555401216317	Delete element
+1555416136591	Delete element
+1555420655438	Delete element
+1555421412827	Delete element
+1555477616117	Delete element
+1555481941893	Rename type 'deckImpl'
+1555482104296	Delete element
+1555486624568	Delete element
+1555486628458	Delete element
+1555486631448	Delete element
+1555581064166	Rename type 'Doctor'
+1555581080679	Rename type 'Patient'
+1555582638280	Rename type 'DoctorDataService'
+1555607847736	Rename package 'com.bridgelabz.inventorymanagement'
+1555607864981	Delete element
+1555607869398	Delete element
+1555608106874	Rename type 'InventoryManagementService'
+1555608133392	Rename type 'InventoryMangaementApp'
+1555608615821	Delete element
+1555649654022	Delete element
+1555649657104	Delete element
+1555649660051	Delete element
+1555649669580	Delete element
+1555674696890	Rename type 'CompanyShareStack'
+1555687460274	Extract method 'isDoctorPresent'

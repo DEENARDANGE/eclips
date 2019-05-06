@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>lOGIN PAGE</title>
+</head>
+<form action="fs" method="post">  
+Name:<input type="text" name="name"/><br/><br/>  
+Password:<input type="password" name="pwd"/><br/><br/>  
+<input type="submit" value="login"/>  
+</form>  
+<FORM action="fs" method="post">
+	Name: <INPUT TYPE="TEXT" NAME="name"><br> <br>
+	 id: <input type="text" name="id"><br> <br>
+	  email: <INPUT TYPE="TEXT" NAME="email"><br> <br>
+	   Password: <input type="password" Value=" pwd "><br> <br>
+	   
+	    <input type="Submit" value="Submit">
+</FORM>
+<body>
+
+</body>
+</html>

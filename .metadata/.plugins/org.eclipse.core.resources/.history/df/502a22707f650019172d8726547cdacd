@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>lOGIN PAGE</title>
+</head>
+<FORM>
+fIRST Name:
+<INPUT TYPE= "TEXT" NAME="FIRST NAME"><br>
+Password:
+<input type="password" Value=" password "><br>
+<input type="button" value="Submit">
+</FORM>
+<body>
+
+</body>
+</html>

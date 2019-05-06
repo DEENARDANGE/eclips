@@ -1,0 +1,36 @@
+package com.bridgelabz.algorithmprograms;
+import com.bridgelabz.util.AlgorithmLogic;
+public class BubbleSort 
+{
+	public static void main(String[] args)
+	{
+		char temp;
+		String sortedString=" ";
+		System.out.println("The String is : ");
+		String Str=AlgorithmLogic.readString();
+		char[] chArr=Str.toCharArray();
+		for (i = 0; i < n - 1; i++)  
+        { 
+            swapped = false; 
+            for (j = i+1; j < n ; j++)  
+            { 
+                if (arr[i] > arr[j])  
+                { 
+                    temp = arr[i]; 
+                    arr[i] = arr[j]; 
+                    arr[j] = temp; 
+                    swapped = true; 
+                } 
+                
+            } 
+            System.out.print(arr[i]);
+            if (swapped == false) 
+                break; 
+        } 
+		for(int k=0;k<chArr.length;k++)
+		{
+			sortedString=sortedString+chArr[k];
+		}
+		System.out.println("Sorted String id " + sortedString);
+		}
+	}

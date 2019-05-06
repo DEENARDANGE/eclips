@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>lOGIN PAGE</title>
+</head>
+<FORM action="fs" method="post">
+	Name: <INPUT TYPE="TEXT" NAME="name"><br>
+	<br> id: <input type="text" name="id"><br> Age: <INPUT
+		TYPE="TEXT" NAME="age"><br> Address: <INPUT TYPE="TEXT"
+		NAME="address"><br> Password: <input type="password"
+		Value=" pwd "><br> <input type="Submit" value="Submit">
+</FORM>
+<body>
+
+</body>
+</html>

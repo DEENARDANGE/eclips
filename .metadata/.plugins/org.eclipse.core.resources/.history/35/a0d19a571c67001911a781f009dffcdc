@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>lOGIN PAGE</title>
+</head>
+<form action="fs" method="post">  
+Name:<input type="text" name="name"/><br/><br/>  
+Password:<input type="password" name="pwd"/><br/><br/>  
+<input type="submit" value="login"/>  
+</form>  
+
+<body>
+
+</body>
+</html>

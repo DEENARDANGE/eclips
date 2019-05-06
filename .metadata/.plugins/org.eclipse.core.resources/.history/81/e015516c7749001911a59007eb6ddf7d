@@ -1,0 +1,31 @@
+package com.bridgelabz.algorithmprograms;
+import com.bridgelabz.common.utils.InputUtility;
+public class DecimalToBinary 
+{
+	public static void main(String[] args) 
+	{
+	     System.out.println(" Enter the value to convert Binary  : ");
+	     int decimalValue=InputUtility.readIntValues();
+	       convertBinary(decimalValue);
+	  }
+		  public static void convertBinary(int num)
+		  {
+			  int b[] = new int[40];
+			     int index = 0;
+			     while(num > 0)
+			     {
+			       b[index++] = num%2;
+			       num = num/2;
+			     }
+			     System.out.println("The binary converted value is :");
+			     for(int i = index-1;i >= 0;i--){
+			       System.out.print(b[i]);
+			     }
+		  }
+		 
+		    
+		
+
+	}
+
+

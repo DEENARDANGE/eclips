@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="SpringHibernetDemo">
+        <property name="context-root" value="SpringHibernetDemo"/>
+        <property name="java-output-path" value="/SpringHibernetDemo/target/classes"/>
+    </wb-module>
+</project-modules>

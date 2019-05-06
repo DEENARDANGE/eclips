@@ -1,0 +1,27 @@
+1552880406470	Delete element
+1552880417137	Delete element
+1552881495407	Rename local variable 'string1'
+1552881511618	Rename local variable 'string2'
+1552885456279	Rename type 'Binary'
+1552972547397	Rename local variable 'names'
+1552978917706	Rename local variable 'names'
+1552990654354	Delete element
+1552991964459	Delete element
+1553001856603	Delete element
+1553001893216	Delete element
+1553001941067	Delete element
+1553053110821	Extract local variable 'path'
+1553053842085	Rename local variable 's'
+1553053952214	Rename method 'binary'
+1553054354307	Rename local variable 'd'
+1553060093499	Rename local variable 'c'
+1553060142879	Rename local variable 'f'
+1553060341646	Delete element
+1553060992117	Delete element
+1553065385835	Rename local variable 'N'
+1553071705134	Rename local variable 'arr'
+1553071946725	Rename type 'Search'
+1553072786945	Delete element
+1553075232508	Rename local variable 'f'
+1553084264489	Delete element
+1553085960832	Rename local variable 'ClassOne'

@@ -1,0 +1,19 @@
+package com.bridgelabz.algorithmprograms;
+
+import com.bridgelabz.util.AlgorithmLogic;
+
+public class PrimeAnagramPalindrom {
+		
+	public static void main(String[] args) {
+		System.out.println("prime between 0 to 1000");
+		AlgorithmLogic.primenum();
+		System.out.println("prime no between 0 to 1000 also pallindrome");
+		AlgorithmLogic.primePallindrome();
+		System.out.println("prime and anagrams");
+		AlgorithmLogic.primeAnagrams();
+	}
+}
+
+
+
+
